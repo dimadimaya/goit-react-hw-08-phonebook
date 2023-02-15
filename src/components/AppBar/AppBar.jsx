@@ -5,7 +5,6 @@ import { useAuth } from 'hooks';
 
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
-import Container from '@mui/material/Container';
 // import css from './AppBar.module.css';
 
 export const AppBarComponent = () => {
