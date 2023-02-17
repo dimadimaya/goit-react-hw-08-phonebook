@@ -3,7 +3,6 @@ import { useAuth } from 'hooks';
 
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-// import css from './Navigation.module.css';
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();

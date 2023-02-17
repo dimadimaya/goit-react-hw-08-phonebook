@@ -36,7 +36,6 @@ export const RegisterForm = () => {
           flexDirection: 'column',
           '& .MuiTextField-root': { width: '396px' },
         }}
-        // noValidate
         autoComplete="off"
       >
         <Typography
@@ -64,7 +63,6 @@ export const RegisterForm = () => {
         <TextField
           type="text"
           name="name"
-          // id="outlined-basic"
           label="Username"
           variant="outlined"
           margin="dense"
@@ -73,7 +71,6 @@ export const RegisterForm = () => {
         <TextField
           type="email"
           name="email"
-          // id="outlined-basic"
           label="Email"
           variant="outlined"
           margin="dense"
@@ -82,7 +79,6 @@ export const RegisterForm = () => {
         <TextField
           type="password"
           name="password"
-          // id="outlined-basic"
           label="Password"
           variant="outlined"
           margin="dense"

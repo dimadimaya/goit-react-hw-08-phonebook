@@ -2,7 +2,6 @@ import styles from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux/';
 import { addContact } from 'redux/contacts/operations';
 import { useState } from 'react';
-// import shortid from 'shortid';
 import { selectContacts } from 'redux/contacts/selectors';
 
 import Typography from '@mui/material/Typography';
@@ -32,7 +31,6 @@ export const ContactForm = () => {
     }
     dispatch(
       addContact({
-        // id: shortid(),
         name: name,
         number: number,
       })

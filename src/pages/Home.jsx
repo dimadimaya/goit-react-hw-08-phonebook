@@ -1,25 +1,10 @@
 import { LoginForm } from 'components/LoginForm/LoginForm';
 import { NavLink } from 'react-router-dom';
 
-import { Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import { useAuth } from 'hooks';
 import { Animation } from 'components/Animation/Animation';
-
-const styles = {
-  container: {
-    minHeight: 'calc(100vh - 60px)',
-    marginTop: '-150px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
-  },
-  title: {
-    fontWeight: 500,
-    fontSize: 48,
-    textAlign: 'center',
-  },
-};
 
 export default function Home() {
   const { isLoggedIn } = useAuth();
@@ -29,7 +14,16 @@ export default function Home() {
       {isLoggedIn ? (
         <Animation />
       ) : (
-        <div style={styles.container}>
+        <Box
+          sx={{
+            minHeight: 'calc(100vh - 60px)',
+            marginTop: '-150px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+          }}
+        >
           <LoginForm />
 
           <Typography
@@ -54,7 +48,7 @@ export default function Home() {
               Register
             </Typography>
           </NavLink>
-        </div>
+        </Box>
       )}
     </>
   );

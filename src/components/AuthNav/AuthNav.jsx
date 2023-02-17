@@ -3,9 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { Box } from '@mui/system';
 import Typography from '@mui/material/Typography';
 
-// import { Link } from '@mui/material';
-// import css from './AuthNav.module.css';
-
 export const AuthNav = () => {
   return (
     <Box
